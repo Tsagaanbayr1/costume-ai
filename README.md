@@ -1,6 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Costume Matchmaker
+
+This project is a Next.js application that allows users to upload an image, sends it to the ChatGPT API to analyze the image and suggest a keyword based on the analysis. This keyword is then used to search the Unsplash API for costume suggestions that fit the user.
 
 ## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm, yarn, pnpm, or bun (choose one)
+- Google Cloud Vision API key
+- OpenAI API key
+- Unsplash API key
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/ai-costume-matchmaker.git
+   cd ai-costume-matchmaker
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+
+3. Set up environment variables:
+   Create a `.env.local` file in the root of your project and add the following:
+
+   ```env
+   GOOGLE_APPLICATION_CREDENTIALS=path-to-your-service-account-key-file.json
+   OPENAI_API_KEY=your-openai-api-key
+   UNSPLASH_ACCESS_KEY=your-unsplash-access-key
+   ```
+
+### Running the Development Server
 
 First, run the development server:
 
